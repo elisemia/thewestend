@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>the west end – theatre tracker</title>
+  <meta name="description" content="A personal West End theatre tracker by pericrayola.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="preload" href="fonts/NyghtSerif-DarkItalic.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="star-on" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12 1.8l3 7.1 7.7.6-5.9 5 1.8 7.5L12 18l-6.6 4 1.8-7.5-5.9-5 7.7-.6z"/>
+    </symbol>
+    <symbol id="star-off" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" d="M12 1.8l3 7.1 7.7.6-5.9 5 1.8 7.5L12 18l-6.6 4 1.8-7.5-5.9-5 7.7-.6z"/>
+    </symbol>
+  </svg>
+
+  <a class="skip-link" href="#log">Skip to show log</a>
+
+  <div class="page">
+    <span class="deco deco--right" aria-hidden="true"></span>
+    <span class="deco deco--left" aria-hidden="true"></span>
+
+    <header class="site-header">
+      <div class="quote">
+        <img class="quote__img" src="images/Vector.svg" alt="“There’s change coming once and for all”">
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="profile" aria-labelledby="site-title">
+        <div class="profile__id">
+          <span class="profile__avatar" aria-hidden="true"></span>
+          <div>
+            <h1 class="profile__title" id="site-title"><span class="hl">the west end</span></h1>
+            <p class="profile__sub">theatre tracker</p>
+          </div>
+        </div>
+
+        <dl class="profile__stats">
+          <div><dt>shows seen</dt><dd>[ 13 ]</dd></div>
+          <div><dt>fav show</dt><dd>[ avenue q ]</dd></div>
+          <div><dt>unique shows</dt><dd>[ 11 ]</dd></div>
+        </dl>
+
+        <div class="profile__credit">
+          <p>quote from Newsies,<br>Once and For All</p>
+          <p class="profile__by">this is v3 btw...will make a nicer one sometime</p>
+        </div>
+      </section>
+
+      <section class="log" id="log" aria-labelledby="log-title" tabindex="-1">
+        <h2 class="visually-hidden" id="log-title">Shows seen</h2>
+
+
+        <article class="entry">
+  <p class="entry__num"><span class="visually-hidden">Show number </span>15</p>
+  <h3 class="entry__title"><span class="hl">Avenue Q</span></h3>
+  <div class="entry__meta">
+    <p class="entry__venue"><span class="venue__name">Shaftesbury Theatre</span> <span class="venue__seat">Stalls</span></p>
+    <time class="entry__date" datetime="2026-11-10"><span class="date-long">10 November 2026</span><span class="date-short">10/11/2026</span></time>
+  </div>
+  <div class="entry__side">
+    <ul class="entry__credits">
+      <li class="credit"><img class="credit__icon" src="images/music-notes-simple.svg" alt="" aria-hidden="true"><span>Schadenfreude</span></li>
+      <li class="credit"><img class="credit__icon" src="images/person.svg" alt="" aria-hidden="true"><span>Bad Idea Bears, Meg Hately/Charlie McCullagh</span></li>
+    </ul>
+    <p class="entry__rating" role="img" aria-label="5 out of 5 stars"><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg></p>
+  </div>
+  <blockquote class="entry__review">
+    <p>I think the more I watch this show, the more I appreciate Meg's role. The humor is definitely not wearing off, and if this ever revives I will be back to see more...</p>
+  </blockquote>
+</article>
+
+
+        <article class="entry">
+  <p class="entry__num"><span class="visually-hidden">Show number </span>14</p>
+  <h3 class="entry__title"><span class="hl">Hadestown</span></h3>
+  <div class="entry__meta">
+    <p class="entry__venue"><span class="venue__name">Lyric Theatre</span> <span class="venue__seat">Balcony / Stalls</span></p>
+    <time class="entry__date" datetime="2026-11-04"><span class="date-long">4 November 2026</span><span class="date-short">04/11/2026</span></time>
+  </div>
+  <div class="entry__side">
+    <ul class="entry__credits">
+      <li class="credit"><img class="credit__icon" src="images/music-notes-simple.svg" alt="" aria-hidden="true"><span>Why We Build the Wall</span></li>
+      <li class="credit"><img class="credit__icon" src="images/person.svg" alt="" aria-hidden="true"><span>Hades, Shaun Dooley</span></li>
+    </ul>
+    <p class="entry__rating" role="img" aria-label="4 out of 5 stars"><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-off"/></svg></p>
+  </div>
+  <blockquote class="entry__review">
+    <p>While the pacing of the show was definitely a bit slow, the style of song was absolutely beautiful and our swing Orpheus was so good. Hades stole the show with his voice and the occasional bit of humor. I love the vibe, and cried...</p>
+  </blockquote>
+</article>
+
+
+        <article class="entry">
+  <p class="entry__num"><span class="visually-hidden">Show number </span>13</p>
+  <h3 class="entry__title"><span class="hl">Heated Rivalry</span></h3>
+  <div class="entry__meta">
+    <p class="entry__venue"><span class="venue__name">Soho Underbelly</span> <span class="venue__seat">Stalls</span></p>
+    <time class="entry__date" datetime="2026-10-30"><span class="date-long">30 October 2026</span><span class="date-short">30/10/2026</span></time>
+  </div>
+  <div class="entry__side">
+    <ul class="entry__credits">
+      <li class="credit"><img class="credit__icon" src="images/music-notes-simple.svg" alt="" aria-hidden="true"><span>One Heated Rivalry!</span></li>
+      <li class="credit"><img class="credit__icon" src="images/person.svg" alt="" aria-hidden="true"><span>Shane Hollander, Zheng Xi Yong</span></li>
+    </ul>
+    <p class="entry__rating" role="img" aria-label="3 out of 5 stars"><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-off"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-off"/></svg></p>
+  </div>
+  <blockquote class="entry__review">
+    <p>Shane was definitely played differently than the TV show but in a way that was hilarious and absolutely befitting the musical...I cannot justify giving this any higher given the songs weren't that great but it was definitely an experience, would go again regardless...</p>
+  </blockquote>
+</article>
+
+
+        <article class="entry">
+  <p class="entry__num"><span class="visually-hidden">Show number </span>12</p>
+  <h3 class="entry__title"><span class="hl">Legally Blonde</span></h3>
+  <div class="entry__meta">
+    <p class="entry__venue"><span class="venue__name">New Wimbledon Theatre</span> <span class="venue__seat">Royal Circle</span></p>
+    <time class="entry__date" datetime="2026-10-21"><span class="date-long">21 October 2026</span><span class="date-short">21/10/2026</span></time>
+  </div>
+  <div class="entry__side">
+    <ul class="entry__credits">
+      <li class="credit"><img class="credit__icon" src="images/music-notes-simple.svg" alt="" aria-hidden="true"><span>Ireland</span></li>
+      <li class="credit"><img class="credit__icon" src="images/person.svg" alt="" aria-hidden="true"><span>Paulette, Karen Mavundukure</span></li>
+    </ul>
+    <p class="entry__rating" role="img" aria-label="4 out of 5 stars"><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-off"/></svg></p>
+  </div>
+  <blockquote class="entry__review">
+    <p>One of my favorite musicals I had never seen live, I think I came in with high expectations. Paulette blew those out of the water, although Callahan definitely could have had more aura...otherwise I love the songs too much to give this any lower. </p>
+  </blockquote>
+</article>
+
+
+<article class="entry">
+  <p class="entry__num"><span class="visually-hidden">Show number </span>11</p>
+  <h3 class="entry__title"><span class="hl">Avenue Q</span></h3>
+  <div class="entry__meta">
+    <p class="entry__venue"><span class="venue__name">Shaftesbury Theatre</span> <span class="venue__seat">Royal Circle</span></p>
+    <time class="entry__date" datetime="2026-09-25"><span class="date-long">25 September 2026</span><span class="date-short">25/09/2026</span></time>
+  </div>
+  <div class="entry__side">
+    <ul class="entry__credits">
+      <li class="credit"><img class="credit__icon" src="images/music-notes-simple.svg" alt="" aria-hidden="true"><span>The Internet is for Porn</span></li>
+      <li class="credit"><img class="credit__icon" src="images/person.svg" alt="" aria-hidden="true"><span>Trekkie Monster, Charlie McCullagh</span></li>
+    </ul>
+    <p class="entry__rating" role="img" aria-label="5 out of 5 stars"><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg></p>
+  </div>
+  <blockquote class="entry__review">
+    <p>This may be my second watch but the shock factor did NOT wear off. Weird favourite but the portrayal of Trekkie Monster was so well done this show. Second watch also meant I got to look at the puppeteers more and really pay attention to how Lucy and Kate were done.</p>
+  </blockquote>
+</article>
+
+
+<article class="entry">
+  <p class="entry__num"><span class="visually-hidden">Show number </span>10</p>
+  <h3 class="entry__title"><span class="hl">The Mousetrap</span></h3>
+  <div class="entry__meta">
+    <p class="entry__venue"><span class="venue__name">St Martin's Theatre</span> <span class="venue__seat">Stalls</span></p>
+    <time class="entry__date" datetime="2026-09-17"><span class="date-long">17 September 2026</span><span class="date-short">17/09/2026</span></time>
+  </div>
+  <div class="entry__side">
+    <ul class="entry__credits">
+      <li class="credit"><img class="credit__icon" src="images/music-notes-simple.svg" alt="" aria-hidden="true"><span>N/A</span></li>
+      <li class="credit"><img class="credit__icon" src="images/person.svg" alt="" aria-hidden="true"><span>Mr. Paravicini, Dugald Bruce-Lockhart</span></li>
+    </ul>
+    <p class="entry__rating" role="img" aria-label="3 out of 5 stars"><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-off"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-off"/></svg></p>
+  </div>
+  <blockquote class="entry__review">
+    <p>Didn’t think I would actually enjoy a play but this was pretty fun. While the plot twist was slightly to be expected, the overall acting was exceptional and had the perfect amount of humour. While still not a fan of this overall format, this was what seemed to be a typical murder story done well on stage.</p>
+  </blockquote>
+</article>
+
+
+<article class="entry">
+  <p class="entry__num"><span class="visually-hidden">Show number </span>9</p>
+  <h3 class="entry__title"><span class="hl">Heathers</span></h3>
+  <div class="entry__meta">
+    <p class="entry__venue"><span class="venue__name">The Arts at Marble Arch</span> <span class="venue__seat">Stalls</span></p>
+    <time class="entry__date" datetime="2026-07-17"><span class="date-long">17 July 2026</span><span class="date-short">17/07/2026</span></time>
+  </div>
+  <div class="entry__side">
+    <ul class="entry__credits">
+      <li class="credit"><img class="credit__icon" src="images/music-notes-simple.svg" alt="" aria-hidden="true"><span>Our Love is God</span></li>
+      <li class="credit"><img class="credit__icon" src="images/person.svg" alt="" aria-hidden="true"><span>JD, Louis Hearsay</span></li>
+    </ul>
+    <p class="entry__rating" role="img" aria-label="5 out of 5 stars"><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg></p>
+  </div>
+  <blockquote class="entry__review">
+    <p>ok icl the only reason i picked this song was because they did a REALLY funny bit during this. also crazy imagery within the song. Otherwise, the musical definitely lived up to the hype, JD was portrayed so convincingly, and Veronica is a close second. </p>
+  </blockquote>
+</article>
+
+
+<article class="entry">
+  <p class="entry__num"><span class="visually-hidden">Show number </span>8</p>
+  <h3 class="entry__title"><span class="hl">Avenue Q</span></h3>
+  <div class="entry__meta">
+    <p class="entry__venue"><span class="venue__name">Shaftesbury Theatre</span> <span class="venue__seat">Royal Circle</span></p>
+    <time class="entry__date" datetime="2026-06-29"><span class="date-long">29 June 2026</span><span class="date-short">29/06/2026</span></time>
+  </div>
+  <div class="entry__side">
+    <ul class="entry__credits">
+      <li class="credit"><img class="credit__icon" src="images/music-notes-simple.svg" alt="" aria-hidden="true"><span>Everyone's a Little Bit Racist</span></li>
+      <li class="credit"><img class="credit__icon" src="images/person.svg" alt="" aria-hidden="true"><span>Kate Monster/Lucy the Slut, Emily Benjamin</span></li>
+    </ul>
+    <p class="entry__rating" role="img" aria-label="5 out of 5 stars"><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg></p>
+  </div>
+  <blockquote class="entry__review">
+    <p>no comment.</p>
+  </blockquote>
+</article>
+
+
+<article class="entry">
+  <p class="entry__num"><span class="visually-hidden">Show number </span>7</p>
+  <h3 class="entry__title"><span class="hl">Kinky Boots</span></h3>
+  <div class="entry__meta">
+    <p class="entry__venue"><span class="venue__name">London Coliseum</span> <span class="venue__seat">Upper Circle</span></p>
+    <time class="entry__date" datetime="2026-06-17"><span class="date-long">17 June 2026</span><span class="date-short">17/06/2026</span></time>
+  </div>
+  <div class="entry__side">
+    <ul class="entry__credits">
+      <li class="credit"><img class="credit__icon" src="images/music-notes-simple.svg" alt="" aria-hidden="true"><span>The History of Wrong Guys</span></li>
+      <li class="credit"><img class="credit__icon" src="images/person.svg" alt="" aria-hidden="true"><span>Lola, Johannes Radebe</span></li>
+    </ul>
+    <p class="entry__rating" role="img" aria-label="3 out of 5 stars"><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-off"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-off"/></svg></p>
+  </div>
+  <blockquote class="entry__review">
+    <p>while the plot and songs were a bit stale, but the dancing, visuals and OH GOD lola was played so well. Good pride month watch for sure</p>
+  </blockquote>
+</article>
+
+
+<article class="entry">
+  <p class="entry__num"><span class="visually-hidden">Show number </span>6</p>
+  <h3 class="entry__title"><span class="hl">Hamilton</span></h3>
+  <div class="entry__meta">
+    <p class="entry__venue"><span class="venue__name">Victoria Palace Theatre</span> <span class="venue__seat">Upper Circle</span></p>
+    <time class="entry__date" datetime="2026-01-14"><span class="date-long">14 January 2026</span><span class="date-short">14/01/2026</span></time>
+  </div>
+  <div class="entry__side">
+    <ul class="entry__credits">
+      <li class="credit"><img class="credit__icon" src="images/music-notes-simple.svg" alt="" aria-hidden="true"><span>What'd I Miss</span></li>
+      <li class="credit"><img class="credit__icon" src="images/person.svg" alt="" aria-hidden="true"><span>Thomas Jefferson</span></li>
+    </ul>
+    <p class="entry__rating" role="img" aria-label="5 out of 5 stars"><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg></p>
+  </div>
+  <blockquote class="entry__review">
+    <p>im so sorry i don't remember the actor's name, but All the characters were so funny in Act 2, especially Jefferson. Much more enjoyable than first experience, as I knew the songs.</p>
+  </blockquote>
+</article>
+
+
+<article class="entry">
+  <p class="entry__num"><span class="visually-hidden">Show number </span>5</p>
+  <h3 class="entry__title"><span class="hl">Chicago</span></h3>
+  <div class="entry__meta">
+    <p class="entry__venue"><span class="venue__name">New Wimbledon Theatre</span> <span class="venue__seat">Stalls</span></p>
+    <time class="entry__date" datetime="2025-06-12"><span class="date-long">12 June 2025</span><span class="date-short">12/06/2025</span></time>
+  </div>
+  <div class="entry__side">
+    <ul class="entry__credits">
+      <li class="credit"><img class="credit__icon" src="images/music-notes-simple.svg" alt="" aria-hidden="true"><span>All That Jazz</span></li>
+      <li class="credit"><img class="credit__icon" src="images/person.svg" alt="" aria-hidden="true"><span>Roxie Hart, Faye Brookes</span></li>
+    </ul>
+    <p class="entry__rating" role="img" aria-label="3 out of 5 stars"><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-off"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-off"/></svg></p>
+  </div>
+  <blockquote class="entry__review">
+    <p>Love the finale, the entire audience lost it at the comments about American nowadays. All That Jazz stood out a lot with live band.</p>
+  </blockquote>
+</article>
+
+
+<article class="entry">
+  <p class="entry__num"><span class="visually-hidden">Show number </span>4</p>
+  <h3 class="entry__title"><span class="hl">Six</span></h3>
+  <div class="entry__meta">
+    <p class="entry__venue"><span class="venue__name">Vaudeville Theatre</span> <span class="venue__seat">Balcony</span></p>
+    <time class="entry__date" datetime="2025-03-20"><span class="date-long">20 March 2025</span><span class="date-short">20/03/2025</span></time>
+  </div>
+  <div class="entry__side">
+    <ul class="entry__credits">
+      <li class="credit"><img class="credit__icon" src="images/music-notes-simple.svg" alt="" aria-hidden="true"><span>Don't Lose Your Head</span></li>
+      <li class="credit"><img class="credit__icon" src="images/person.svg" alt="" aria-hidden="true"><span>Anne Boleyn, Thao Therese Nguyen</span></li>
+    </ul>
+    <p class="entry__rating" role="img" aria-label="4 out of 5 stars"><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-off"/></svg></p>
+  </div>
+  <blockquote class="entry__review">
+    <p>We had a Scottish Anne of Cleves which was so peak, but the ENTIRE cast was so good. The show was definitely different, concert energy. </p>
+  </blockquote>
+</article>
+
+
+<article class="entry">
+  <p class="entry__num"><span class="visually-hidden">Show number </span>3</p>
+  <h3 class="entry__title"><span class="hl">Mean Girls</span></h3>
+  <div class="entry__meta">
+    <p class="entry__venue"><span class="venue__name">Savoy Theatre</span> <span class="venue__seat">Stalls</span></p>
+    <time class="entry__date" datetime="2024-12-31"><span class="date-long">31 December 2024</span><span class="date-short">31/12/2024</span></time>
+  </div>
+  <div class="entry__side">
+    <ul class="entry__credits">
+      <li class="credit"><img class="credit__icon" src="images/music-notes-simple.svg" alt="" aria-hidden="true"><span>Revenge Party</span></li>
+      <li class="credit"><img class="credit__icon" src="images/person.svg" alt="" aria-hidden="true"><span>Karen, Grace Mouat</span></li>
+    </ul>
+    <p class="entry__rating" role="img" aria-label="4 out of 5 stars"><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-off"/></svg></p>
+  </div>
+  <blockquote class="entry__review">
+    <p>LOVED the Karen in this show, played really well. Regina George in World Burn also did come across very wel. </p>
+  </blockquote>
+</article>
+
+
+<article class="entry">
+  <p class="entry__num"><span class="visually-hidden">Show number </span>2</p>
+  <h3 class="entry__title"><span class="hl">Wicked</span></h3>
+  <div class="entry__meta">
+    <p class="entry__venue"><span class="venue__name">Apollo Victoria Theatre</span> <span class="venue__seat">Stalls</span></p>
+    <time class="entry__date" datetime="Unknown"><span class="date-long">Unknown</span><span class="date-short">Unknown</span></time>
+  </div>
+  <div class="entry__side">
+    <ul class="entry__credits">
+      <li class="credit"><img class="credit__icon" src="images/music-notes-simple.svg" alt="" aria-hidden="true"><span>Defying Gravity</span></li>
+      <li class="credit"><img class="credit__icon" src="images/person.svg" alt="" aria-hidden="true"><span>:c</span></li>
+    </ul>
+    <p class="entry__rating" role="img" aria-label="4 out of 5 stars"><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-off"/></svg></p>
+  </div>
+  <blockquote class="entry__review">
+    <p>BORING fav but definitely so impactful, loved the staging for the most part. Definitely not my favorite vibe, but the hype is there. </p>
+  </blockquote>
+</article>
+
+
+<article class="entry">
+  <p class="entry__num"><span class="visually-hidden">Show number </span>1</p>
+  <h3 class="entry__title"><span class="hl">Hamilton</span></h3>
+  <div class="entry__meta">
+    <p class="entry__venue"><span class="venue__name">Victoria Palace Theatre</span> <span class="venue__seat">Stalls</span></p>
+    <time class="entry__date" datetime="2023-08-17"><span class="date-long">17 August 2023</span><span class="date-short">17/08/2023</span></time>
+  </div>
+  <div class="entry__side">
+    <ul class="entry__credits">
+      <li class="credit"><img class="credit__icon" src="images/music-notes-simple.svg" alt="" aria-hidden="true"><span>Room Where It Happens</span></li>
+      <li class="credit"><img class="credit__icon" src="images/person.svg" alt="" aria-hidden="true"><span>:c</span></li>
+    </ul>
+    <p class="entry__rating" role="img" aria-label="5 out of 5 stars"><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg><svg class="star" aria-hidden="true" focusable="false"><use href="#star-on"/></svg></p>
+  </div>
+  <blockquote class="entry__review">
+    <p>Absolute classic, first time in theatre made my heart go crazy. May have been a classic, but made me fall in love with musicals.</p>
+  </blockquote>
+</article>
+      </section>
+    </main>
+  </div>
+
+  <audio id="bg-music" src="audio/track.mp3" preload="metadata" loop></audio>
+
+  <button
+    type="button"
+    class="music-btn"
+    aria-label="Play music"
+    aria-pressed="false"
+  >
+    <svg class="music-btn__icon music-btn__icon--play" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path fill="currentColor" d="M8 5.14v13.72a1 1 0 0 0 1.52.85l10.86-6.86a1 1 0 0 0 0-1.7L9.52 4.29A1 1 0 0 0 8 5.14Z"/>
+    </svg>
+    <svg class="music-btn__icon music-btn__icon--pause" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <rect fill="currentColor" x="6" y="4" width="4.5" height="16" rx="1"/>
+      <rect fill="currentColor" x="13.5" y="4" width="4.5" height="16" rx="1"/>
+    </svg>
+  </button>
+
+  <script>
+    /* Mobile only: slide the header quote sideways as the page scrolls. */
+    (function () {
+      var bar = document.querySelector('.quote');
+      var text = bar.querySelector('.quote__img');
+      var mobile = window.matchMedia('(max-width: 767.98px)');
+      var reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+      var queued = false;
+
+      function update() {
+        queued = false;
+        if (!mobile.matches) { text.style.transform = ''; return; }
+        var max = Math.max(0, text.offsetWidth - bar.clientWidth);
+        var start = max * 0.45;               /* resting position at top of page */
+        var progress = 0;
+        if (!reduce.matches) {
+          var range = document.documentElement.scrollHeight - window.innerHeight;
+          progress = range > 0 ? Math.min(1, Math.max(0, window.scrollY / range)) : 0;
+        }
+        text.style.transform = 'translate3d(' + (-(start + progress * (max - start))) + 'px,0,0)';
+      }
+      function request() {
+        if (!queued) { queued = true; window.requestAnimationFrame(update); }
+      }
+
+      window.addEventListener('scroll', request, { passive: true });
+      window.addEventListener('resize', request);
+      text.addEventListener('load', request);
+      if (mobile.addEventListener) {
+        mobile.addEventListener('change', request);
+        reduce.addEventListener('change', request);
+      }
+      if (document.fonts && document.fonts.ready) { document.fonts.ready.then(update); }
+      update();
+    })();
+
+    (function () {
+      var rightBar = document.querySelector('.deco--right');
+      var leftBar = document.querySelector('.deco--left');
+      if (!rightBar || !leftBar) return;
+
+      var desktop = window.matchMedia('(min-width: 1024px)');
+      var reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+      var supportsScrollTimeline = window.CSS && CSS.supports && CSS.supports('animation-timeline: scroll()');
+      var queued = false;
+
+      function reset() {
+        rightBar.style.setProperty('--deco-y', '0px');
+        leftBar.style.setProperty('--deco-y', '0px');
+      }
+
+      function update() {
+        queued = false;
+        if (!desktop.matches || reduce.matches || supportsScrollTimeline) {
+          reset();
+          return;
+        }
+        var y = window.scrollY || window.pageYOffset || 0;
+        var rightOffset = Math.max(-140, Math.min(140, y * -0.18));
+        var leftOffset = Math.max(-120, Math.min(120, y * 0.14));
+        rightBar.style.setProperty('--deco-y', rightOffset.toFixed(1) + 'px');
+        leftBar.style.setProperty('--deco-y', leftOffset.toFixed(1) + 'px');
+      }
+
+      function request() {
+        if (!queued) {
+          queued = true;
+          window.requestAnimationFrame(update);
+        }
+      }
+
+      window.addEventListener('scroll', request, { passive: true });
+      window.addEventListener('resize', request);
+      if (desktop.addEventListener) {
+        desktop.addEventListener('change', request);
+        reduce.addEventListener('change', request);
+      }
+      update();
+    })();
+
+    (function () {
+      var btn = document.querySelector('.music-btn');
+      var audio = document.getElementById('bg-music');
+      if (!btn || !audio) return;
+
+      function syncState() {
+        var playing = !audio.paused;
+        btn.setAttribute('aria-pressed', String(playing));
+        btn.setAttribute('aria-label', playing ? 'Pause music' : 'Play music');
+      }
+
+      btn.addEventListener('click', function () {
+        if (audio.paused) {
+          var playPromise = audio.play();
+          if (playPromise && playPromise.catch) {
+            playPromise.catch(function () {
+              syncState();
+            });
+          }
+        } else {
+          audio.pause();
+        }
+      });
+
+      audio.addEventListener('play', syncState);
+      audio.addEventListener('pause', syncState);
+      audio.addEventListener('ended', syncState);
+      syncState();
+    })();
+  </script>
+</body>
+</html>
